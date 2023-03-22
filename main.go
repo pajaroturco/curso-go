@@ -19,6 +19,6 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hola Mundo")
 	})
-	fmt.Println("El servidor esta corriendo en el puerto 3000")
+	fmt.Println("El servidor esta corriendo en el puerto " + port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }

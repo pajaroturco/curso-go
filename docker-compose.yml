@@ -6,6 +6,6 @@ services:
     # working_dir value has to be the same of mapped volume
     working_dir: /go/src/github.com/pajaroturco/curso-go
     ports:
-      - 3000:3000
+      - ${PORT}:${PORT}
     volumes:
       - .:/go/src/github.com/pajaroturco/curso-go
